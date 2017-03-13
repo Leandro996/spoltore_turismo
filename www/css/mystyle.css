@@ -1,0 +1,61 @@
+#pannello, #pannello1{
+    background-color: #3D3D3D;
+}
+#head{
+    background-color: #92AAC7;
+    border-color: #000;
+}
+h1{
+    color: #fff;
+    text-shadow:0 1px 0 #000;
+}
+.image-index{
+    width: 100%; height: 100%; top: 0; left: 0;
+    background: url(images/bg.jpg) no-repeat center top; z-index: -1;
+    background-size: cover;
+    border-radius: 4px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.image-icon{
+    background-color: transparent !important;
+}
+.foot{
+    height:20px; 
+    text-align: center;
+}	
+.custom-corners .ui-bar {
+  -webkit-border-top-left-radius: inherit;
+  border-top-left-radius: inherit;
+  -webkit-border-top-right-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.custom-corners .ui-body {
+  border-top-width: 0;
+  -webkit-border-bottom-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  -webkit-border-bottom-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.font{
+    font-size: 65%;
+    padding-left: 10px;
+}
+.custom-body{
+    padding: 0;
+}
+.image-list{
+    width: 100%; height: 100%;
+}
+.arrow-list{
+    margin:0; 
+    background-color: transparent !important; 
+    border-color: transparent !important;
+    margin-top: -3.5px;
+}
+.church{}
+.cult{}
+.mon{}
+.rist{}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Spoltore Turismo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="js/libs/jquery-mobile/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/jquery-mobile/jquery.mobile.min.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/jquery-mobile/jquery.mobile.structure.min.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/jquery-mobile/jquery.mobile.theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+        <script src="js/libs/jquery/jquery.min.js" type="text/javascript"></script>
+        <script src="js/libs/jquery-mobile/jquery.mobile.min.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div data-role="page" id="home">
+            <div data-role="panel" id="pannello" data-transition="slide" class="pannello">
+                <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Filtra elementi ...">
+                    <li><a href="#luogo" class="ui-btn ui-btn-b ui-btn-inline ui-icon-star ui-btn-icon-left ui-shadow-icon">Luoghi</a></li>
+                    <li><a href="#galleria" class="ui-btn ui-btn-b ui-btn-inline ui-icon-camera ui-btn-icon-left ui-shadow-icon">Galleria</a></li>
+                    <li><a href="#trasporti" class="ui-btn ui-btn-b ui-btn-inline ui-icon-navigation ui-btn-icon-left ui-shadow-icon">Mezzi di Trasporto</a></li>
+                    <li><a href="#itinerari" class="ui-btn ui-btn-b ui-btn-inline ui-icon-cloud ui-btn-icon-left ui-shadow-icon">Itinerari</a></li>
+                    <li><a href="#mappa" class="ui-btn ui-btn-b ui-btn-inline ui-icon-location ui-btn-icon-left ui-shadow-icon">Mappa</a></li>
+                    <li><a href="#contatti" class="ui-btn ui-btn-b ui-btn-inline ui-icon-mail ui-btn-icon-left ui-shadow-icon">Contatti</a></li>
+                </ul>
+            </div>
+            <div data-role="header" id="head" data-position="fixed">
+                <a href="#pannello" class="ui-btn ui-btn-left ui-icon-bars ui-btn-icon-left ui-corner-all ui-shadow-icon" data-transition="pop" data-theme="b">Menù</a>
+                <h1>Home</h1>
+            </div>
+            <div data-role="main" class="ui-content" style="background-color: #ddd;">
+                <h3>Comune di Spoltore</h3>
+                <img class="image-index" src="img/background.jpg" alt="">
+                <p>Per quanto alcuni resti emersi di lapidi, parti di colonne e pavimenti accreditino una presenza romana nel territorio, il nome del comune è alto-medievale e deriva dal germanico spelt, cioè farro, la cui coltivazione una volta era diffusissima nel territorio comunale.
+
+All'avvento dei normanni Spoltore divenne pertinenza della contea di Loreto, per poi venire in seguito infeudato a diversi casati. Nel 1496, col titolo di baronia, venne concesso a Ferdinando Castriota detto Manfredino, la cui famiglia vi esercitò pieno potere per i successivi cinquanta anni, durante i quali l'impianto urbano assunse i connotati che pressappoco conserva oggi.</p>
+                
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-a">
+                    <a href="#home" class="ui-block-a ui-btn"><div class="ui-bar ui-bar-a ui-btn-icon-top ui-icon-home foot">Home</div></a>
+                    <a href="#contatti" class="ui-block-b ui-btn"><div class="ui-bar ui-bar-a ui-btn-icon-top ui-icon-mail foot">Contattaci</div></a>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="luogo" style="background-color: #ddd;">
+            <div data-role="panel" id="pannello1" data-transition="slide" class="pannello">
+                <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Filtra elementi ...">
+                    <li><a href="#luogo" class="ui-btn ui-btn-b ui-btn-inline ui-icon-star ui-btn-icon-left ui-shadow-icon">Luoghi</a></li>
+                    <li><a href="#galleria" class="ui-btn ui-btn-b ui-btn-inline ui-icon-camera ui-btn-icon-left ui-shadow-icon">Galleria</a></li>
+                    <li><a href="#trasporti" class="ui-btn ui-btn-b ui-btn-inline ui-icon-navigation ui-btn-icon-left ui-shadow-icon">Mezzi di Trasporto</a></li>
+                    <li><a href="#itinerari" class="ui-btn ui-btn-b ui-btn-inline ui-icon-cloud ui-btn-icon-left ui-shadow-icon">Itinerari</a></li>
+                    <li><a href="#mappa" class="ui-btn ui-btn-b ui-btn-inline ui-icon-location ui-btn-icon-left ui-shadow-icon">Mappa</a></li>
+                    <li><a href="#contatti" class="ui-btn ui-btn-b ui-btn-inline ui-icon-mail ui-btn-icon-left ui-shadow-icon">Contatti</a></li>
+                </ul>
+            </div>
+            <div data-role="header" id='head' data-position="fixed">
+                <a href="#pannello1" class="ui-btn ui-btn-left ui-icon-bars ui-btn-icon-left ui-corner-all ui-shadow-icon" data-transition="pop" data-theme="b">Menù</a>
+                <h1>Luoghi</h1>
+            </div>
+            <div data-role="main" class="ui-content" style="background-color: #ddd;">
+                <h3>Scegli i tuoi punti di interesse</h3>	
+                    <div class="ui-grid-a">
+                        <div class="ui-block-b">
+                            <a href="#cultura" class="ui-btn image-icon"><img src="img/icons/Museum.png" alt=""/><br>Cultura</a>
+                        </div>
+                        <div class="ui-block-b">
+                            <a href="#chiese" class="ui-btn image-icon"><img src="img/icons/Church.png" alt=""/><br>Chiese</a>
+                        </div>
+                    </div>
+                    <div class="ui-grid-a">
+                            <div class="ui-block-b">
+                                <a href="#ristoranti" class="ui-btn image-icon"><img src="img/icons/Restaurant.png" alt=""/><br>Ristoranti</a>
+                            </div>
+                        <div class="ui-block-b">
+                                <a href="#monumenti" class="ui-btn image-icon"><img src="img/icons/Monument.png" alt=""/><br>Monumenti</a>
+                            </div>
+                    </div>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-a">
+                    <a href="#home" class="ui-block-a ui-btn"><div class="ui-bar ui-bar-a ui-btn-icon-top ui-icon-home foot">Home</div></a>
+                    <a href="#contatti" class="ui-block-b ui-btn"><div class="ui-bar ui-bar-a ui-btn-icon-top ui-icon-mail foot">Contattaci</div></a>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="chiese" style="background-color: #ddd;">
+            <div data-role="panel" id="pannello2" data-transition="slide" class="pannello">
+                <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Filtra elementi ...">
+                    <li><a href="#luogo" class="ui-btn ui-btn-b ui-btn-inline ui-icon-star ui-btn-icon-left ui-shadow-icon">Luoghi</a></li>
+                    <li><a href="#galleria" class="ui-btn ui-btn-b ui-btn-inline ui-icon-camera ui-btn-icon-left ui-shadow-icon">Galleria</a></li>
+                    <li><a href="#trasporti" class="ui-btn ui-btn-b ui-btn-inline ui-icon-navigation ui-btn-icon-left ui-shadow-icon">Mezzi di Trasporto</a></li>
+                    <li><a href="#itinerari" class="ui-btn ui-btn-b ui-btn-inline ui-icon-cloud ui-btn-icon-left ui-shadow-icon">Itinerari</a></li>
+                    <li><a href="#mappa" class="ui-btn ui-btn-b ui-btn-inline ui-icon-location ui-btn-icon-left ui-shadow-icon">Mappa</a></li>
+                    <li><a href="#contatti" class="ui-btn ui-btn-b ui-btn-inline ui-icon-mail ui-btn-icon-left ui-shadow-icon">Contatti</a></li>
+                </ul>
+            </div>
+            <div data-role="header" id='head' data-position="fixed">
+                <a href="#pannello2" class="ui-btn ui-btn-left ui-icon-bars ui-btn-icon-left ui-corner-all ui-shadow-icon" data-transition="pop" data-theme="b">Menù</a>
+                <a href="#" data-rel="back" class="ui-btn ui-btn-right ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow-icon" data-theme="b">Indietro</a>
+                <h1>Chiese</h1>
+            </div>
+            <div data-role="main" class="ui-content church">
+                <!--<div class="ui-corner-all custom-corners">
+                    <div class="ui-bar ui-bar-a">
+                      <h3>Chiesa di San Panfilo</h3>
+                      <a class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-carat-r arrow-list"></a>
+                    </div>
+                    <div class="ui-body ui-body-a custom-body">
+                        <img class="image-list" src="img/chiesa.jpg" alt="">
+                        <p class="font">Piazza Q. di Marzio, 1, 65010 Spoltore PE - Tel. 085 496 1216</p>
+                    </div>
+                </div>-->
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-a">
+                    <a href="#home" class="ui-block-a ui-btn"><div class="ui-bar ui-bar-a ui-btn-icon-top ui-icon-home foot">Home</div></a>
+                    <a href="#contatti" class="ui-block-b ui-btn"><div class="ui-bar ui-bar-a ui-btn-icon-top ui-icon-mail foot">Contattaci</div></a>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="cultura" style="background-color: #ddd;">
+            <div data-role="panel" id="pannello3" data-transition="slide" class="pannello">
+                <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Filtra elementi ...">
+                    <li><a href="#luogo" class="ui-btn ui-btn-b ui-btn-inline ui-icon-star ui-btn-icon-left ui-shadow-icon">Luoghi</a></li>
+                    <li><a href="#galleria" class="ui-btn ui-btn-b ui-btn-inline ui-icon-camera ui-btn-icon-left ui-shadow-icon">Galleria</a></li>
+                    <li><a href="#trasporti" class="ui-btn ui-btn-b ui-btn-inline ui-icon-navigation ui-btn-icon-left ui-shadow-icon">Mezzi di Trasporto</a></li>
+                    <li><a href="#itinerari" class="ui-btn ui-btn-b ui-btn-inline ui-icon-cloud ui-btn-icon-left ui-shadow-icon">Itinerari</a></li>
+                    <li><a href="#mappa" class="ui-btn ui-btn-b ui-btn-inline ui-icon-location ui-btn-icon-left ui-shadow-icon">Mappa</a></li>
+                    <li><a href="#contatti" class="ui-btn ui-btn-b ui-btn-inline ui-icon-mail ui-btn-icon-left ui-shadow-icon">Contatti</a></li>
+                </ul>
+            </div>
+            <div data-role="header" id='head' data-position="fixed">
+                <a href="#pannello3" class="ui-btn ui-btn-left ui-icon-bars ui-btn-icon-left ui-corner-all ui-shadow-icon" data-transition="pop" data-theme="b">Menù</a>
+                <a href="#" data-rel="back" class="ui-btn ui-btn-right ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow-icon" data-theme="b">Indietro</a>
+                <h1>Cultura</h1>
+            </div>
+            <div data-role="main" class="ui-content cult">
+                
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-a">
+                    <a href="#home" class="ui-block-a ui-btn"><div class="ui-bar ui-bar-a ui-btn-icon-top ui-icon-home foot">Home</div></a>
+                    <a href="#contatti" class="ui-block-b ui-btn"><div class="ui-bar ui-bar-a ui-btn-icon-top ui-icon-mail foot">Contattaci</div></a>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="monumenti" style="background-color: #ddd;">
+            <div data-role="panel" id="pannello4" data-transition="slide" class="pannello">
+                <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Filtra elementi ...">
+                    <li><a href="#luogo" class="ui-btn ui-btn-b ui-btn-inline ui-icon-star ui-btn-icon-left ui-shadow-icon">Luoghi</a></li>
+                    <li><a href="#galleria" class="ui-btn ui-btn-b ui-btn-inline ui-icon-camera ui-btn-icon-left ui-shadow-icon">Galleria</a></li>
+                    <li><a href="#trasporti" class="ui-btn ui-btn-b ui-btn-inline ui-icon-navigation ui-btn-icon-left ui-shadow-icon">Mezzi di Trasporto</a></li>
+                    <li><a href="#itinerari" class="ui-btn ui-btn-b ui-btn-inline ui-icon-cloud ui-btn-icon-left ui-shadow-icon">Itinerari</a></li>
+                    <li><a href="#mappa" class="ui-btn ui-btn-b ui-btn-inline ui-icon-location ui-btn-icon-left ui-shadow-icon">Mappa</a></li>
+                    <li><a href="#contatti" class="ui-btn ui-btn-b ui-btn-inline ui-icon-mail ui-btn-icon-left ui-shadow-icon">Contatti</a></li>
+                </ul>
+            </div>
+            <div data-role="header" id='head' data-position="fixed">
+                <a href="#pannello4" class="ui-btn ui-btn-left ui-icon-bars ui-btn-icon-left ui-corner-all ui-shadow-icon" data-transition="pop" data-theme="b">Menù</a>
+                <a href="#" data-rel="back" class="ui-btn ui-btn-right ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow-icon" data-theme="b">Indietro</a>
+                <h1>Monumenti</h1>
+            </div>
+            <div data-role="main" class="ui-content mon">
+                
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-a">
+                    <a href="#home" class="ui-block-a ui-btn"><div class="ui-bar ui-bar-a ui-btn-icon-top ui-icon-home foot">Home</div></a>
+                    <a href="#contatti" class="ui-block-b ui-btn"><div class="ui-bar ui-bar-a ui-btn-icon-top ui-icon-mail foot">Contattaci</div></a>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="ristoranti" style="background-color: #ddd;">
+            <div data-role="panel" id="pannello5" data-transition="slide" class="pannello">
+                <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Filtra elementi ...">
+                    <li><a href="#luogo" class="ui-btn ui-btn-b ui-btn-inline ui-icon-star ui-btn-icon-left ui-shadow-icon">Luoghi</a></li>
+                    <li><a href="#galleria" class="ui-btn ui-btn-b ui-btn-inline ui-icon-camera ui-btn-icon-left ui-shadow-icon">Galleria</a></li>
+                    <li><a href="#trasporti" class="ui-btn ui-btn-b ui-btn-inline ui-icon-navigation ui-btn-icon-left ui-shadow-icon">Mezzi di Trasporto</a></li>
+                    <li><a href="#itinerari" class="ui-btn ui-btn-b ui-btn-inline ui-icon-cloud ui-btn-icon-left ui-shadow-icon">Itinerari</a></li>
+                    <li><a href="#mappa" class="ui-btn ui-btn-b ui-btn-inline ui-icon-location ui-btn-icon-left ui-shadow-icon">Mappa</a></li>
+                    <li><a href="#contatti" class="ui-btn ui-btn-b ui-btn-inline ui-icon-mail ui-btn-icon-left ui-shadow-icon">Contatti</a></li>
+                </ul>
+            </div>
+            <div data-role="header" id='head' data-position="fixed">
+                <a href="#pannello5" class="ui-btn ui-btn-left ui-icon-bars ui-btn-icon-left ui-corner-all ui-shadow-icon" data-transition="pop" data-theme="b">Menù</a>
+                <a href="#" data-rel="back" class="ui-btn ui-btn-right ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow-icon" data-theme="b">Indietro</a>
+                <h1>Ristoranti</h1>
+            </div>
+            <div data-role="main" class="ui-content rist">
+                
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-a">
+                    <a href="#home" class="ui-block-a ui-btn"><div class="ui-bar ui-bar-a ui-btn-icon-top ui-icon-home foot">Home</div></a>
+                    <a href="#contatti" class="ui-block-b ui-btn"><div class="ui-bar ui-bar-a ui-btn-icon-top ui-icon-mail foot">Contattaci</div></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
