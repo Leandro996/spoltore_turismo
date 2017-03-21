@@ -22,6 +22,10 @@ h3{
 .image-icon{
     background-color: transparent !important;
 }
+.dimension{
+    width: 50px;
+    height: 50px;
+}
 .foot{
     height:20px; 
     text-align: center;
@@ -45,6 +49,7 @@ h3{
 }
 .custom-body{
     padding: 0;
+    margin-bottom: 10px;
 }
 .image-list{
     width: 100%; height: 100%;
@@ -59,3 +64,16 @@ h3{
 .cult{}
 .mon{}
 .rist{}
+.map-content{}
+.icon-contatti{
+    width: 18px;
+    height: 18px;
+    float:left;
+    padding-right: 5px;
+}
+.font-form{
+    font-size: 80% !important;
+}
+.form-size{
+    height: 30px !important;
+}
