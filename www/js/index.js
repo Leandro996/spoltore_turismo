@@ -163,9 +163,8 @@ $(function(){
         $(this).find("div[data-role='panel']").panel("close");
     });
     $("#scrolldown").click(function(e){
-        e.preventDefault();
-        $('div[data-role=page]').bind("pageshow", function() {
-            setTimeout(function(){$.mobile.silentScroll($("#register").offset().top);},200);
+        $("#contatti").on("pageshow", function() {
+            $.mobile.silentScroll($("#register").offset().top);
         });
         $.mobile.silentScroll($("#register").offset().top);
     });
