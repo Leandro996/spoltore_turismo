@@ -25,12 +25,12 @@
         <icon density="xxhdpi" src="res/android/xxhdpi.png"/>
         <icon density="xxxhdpi" src="res/android/xxxhdpi.png"/>
         
-        <splash src="res/splash/android/port-hdpi.png" density="port-hdpi"/>
-        <splash src="res/splash/android/port-ldpi.png" density="port-ldpi"/>
-        <splash src="res/splash/android/port-mdpi.png" density="port-mdpi"/>
-        <splash src="res/splash/android/port-xhdpi.png" density="port-xhdpi"/>
-        <splash src="res/splash/android/port-xxhdpi.png" density="port-xxhdpi"/>
-        <splash src="res/splash/android/port-xxxhdpi.png" density="port-xxxhdpi"/>
+        <splash src="res/splash/android/drawable-hdpi/screen.png" density="port-hdpi"/>
+        <splash src="res/splash/android/drawable-ldpi/screen.png" density="port-ldpi"/>
+        <splash src="res/splash/android/drawable-mdpi/screen.png" density="port-mdpi"/>
+        <splash src="res/splash/android/drawable-xhdpi/screen.png" density="port-xhdpi"/>
+        <splash src="res/splash/android/drawable-xxhdpi/screen.png" density="port-xxhdpi"/>
+        <splash src="res/splash/android/drawable-xxxhdpi/screen.png" density="port-xxxhdpi"/>
     </platform>
     <preference name="SplashScreenDelay" value="2000" />
     <preference name="Orientation" value="portrait" />
