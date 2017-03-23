@@ -7,15 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-media": {
-            "PACKAGE_NAME": "com.coolappz.spoltore_turismo"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.coolappz.spoltore_turismo"
-        },
-        "cordova-plugin-geolocation": {
-            "PACKAGE_NAME": "com.coolappz.spoltore_turismo"
-        },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.coolappz.spoltore_turismo"
         },
@@ -23,9 +14,5 @@
             "PACKAGE_NAME": "com.coolappz.SpoltoreTurismo"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.coolappz.spoltore_turismo"
-        }
-    }
+    "dependent_plugins": {}
 }

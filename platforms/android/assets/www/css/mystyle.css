@@ -1,9 +1,9 @@
-#pannello, #pannello1{
-    background-color: #3D3D3D;
+.pannello{
+    background-color: #0e97d8 !important;
 }
-#head{
-    background-color: #92AAC7;
-    border-color: #000;
+.testa{
+    background-color: #0e97d8 !important;
+    border-color: #14a2f5 !important;
 }
 h1{
     color: #fff;
@@ -11,8 +11,6 @@ h1{
 }
 .image-index{
     width: 100%; height: 100%; top: 0; left: 0;
-    background: url(images/bg.jpg) no-repeat center top; z-index: -1;
-    background-size: cover;
     border-radius: 4px;
 }
 h3{
@@ -21,6 +19,7 @@ h3{
 }
 .image-icon{
     background-color: transparent !important;
+    border-radius: 20px !important;
 }
 .dimension{
     width: 50px;
@@ -29,6 +28,10 @@ h3{
 .foot{
     height:20px; 
     text-align: center;
+    background-color: #0e97d8;
+    border-color: #14a2f5;
+    color:#fff;
+    text-shadow:0 1px 0 #000;
 }	
 .custom-corners .ui-bar {
   -webkit-border-top-left-radius: inherit;
@@ -65,6 +68,7 @@ h3{
 .mon{}
 .rist{}
 .map-content{}
+.scrolldown{}
 .icon-contatti{
     width: 18px;
     height: 18px;
@@ -76,4 +80,36 @@ h3{
 }
 .form-size{
     height: 30px !important;
+}
+.pop{
+    width: 100vw;
+    height: 80vh;
+}
+.fade{
+    width: 90%;
+    height: 100%;
+    margin-left: 15px;
+}
+.font-list{
+    font-size: 75%;
+}
+.heart-list{
+    margin:0; 
+    background-color: transparent !important; 
+    border-color: transparent !important;
+    margin-top: -3.5px;
+    margin-right: 30px;
+}
+.menu{
+    background-color: #0e97d8 !important;
+    border-color: #14a2f5;
+}
+.lista{
+    color: #fff !important;
+    text-shadow:0 1px 0 #000 !important;
+}
+.top-list{
+    text-shadow: 0 1px #fff;
+    color: black;
+    background-color: #e2dfdf;
 }

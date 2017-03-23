@@ -37,16 +37,17 @@
     NSNumber *number =  (NSNumber *)objc_getAssociatedObject(self, @selector(enabledAutorotation));
 
     // Defaulting to YES to correspond parent CDVViewController behavior
-    if (number == nil)
-    {
+    //if (number == nil)
+    //{
         return YES;
-    }
+    //}
 
-    return [number boolValue];
+    //return [number boolValue];
 }
 
 + (void)load
 {
+/*
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         Class class = [self class];
@@ -71,19 +72,20 @@
             method_exchangeImplementations(originalMethod, swizzledMethod);
         }
     });
+	*/
 }
 
 #pragma mark - Method Swizzling
 
 - (BOOL)splash_shouldAutorotate
 {
-    return self.enabledAutorotation;
+    return YES;//self.enabledAutorotation;
 }
 
 
 - (BOOL)shouldAutorotateDefaultValue
 {
-    return [self splash_shouldAutorotate];
+    return YES;//[self splash_shouldAutorotate];
 }
 
 @end

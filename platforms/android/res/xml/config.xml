@@ -1,18 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.coolappz.SpoltoreTurismo" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <feature name="File">
-        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
-        <param name="onload" value="true" />
-    </feature>
-    <allow-navigation href="cdvfile:*" />
-    <feature name="Media">
-        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
-    </feature>
-    <feature name="Geolocation">
-        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
-    </feature>
     <feature name="SplashScreen">
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
     <name>SpoltoreTurismo</name>
@@ -37,17 +30,15 @@
     <icon density="xhdpi" src="res/android/xhdpi.png" />
     <icon density="xxhdpi" src="res/android/xxhdpi.png" />
     <icon density="xxxhdpi" src="res/android/xxxhdpi.png" />
-    <splash density="port-hdpi" src="res/splash/android/port-hdpi.png" />
-    <splash density="port-ldpi" src="res/splash/android/port-ldpi.png" />
-    <splash density="port-mdpi" src="res/splash/android/port-mdpi.png" />
-    <splash density="port-xhdpi" src="res/splash/android/port-xhdpi.png" />
-    <splash density="port-xxhdpi" src="res/splash/android/port-xxhdpi.png" />
-    <splash density="port-xxxhdpi" src="res/splash/android/port-xxxhdpi.png" />
+    <splash density="port-hdpi" src="res/splash/android/drawable-hdpi/screen.png" />
+    <splash density="port-mdpi" src="res/splash/android/drawable-mdpi/screen.png" />
+    <splash density="port-ldpi" src="res/splash/android/drawable-ldpi/screen.png" />
+    <splash density="port-xhdpi" src="res/splash/android/drawable-xhdpi/screen.png" />
+    <splash density="port-xxhdpi" src="res/splash/android/drawable-xxhdpi/screen.png" />
+    <splash density="port-xxxhdpi" src="res/splash/android/drawable-xxxhdpi/screen.png" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="AutoHideSplashScreen" value="true" />
     <preference name="SplashScreenDelay" value="2000" />
     <preference name="Orientation" value="portrait" />
-    <feature name="Whitelist">
-        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
-        <param name="onload" value="true" />
-    </feature>
 </widget>

@@ -68,6 +68,7 @@ h3{
 .mon{}
 .rist{}
 .map-content{}
+.scrolldown{}
 .icon-contatti{
     width: 18px;
     height: 18px;
@@ -106,4 +107,9 @@ h3{
 .lista{
     color: #fff !important;
     text-shadow:0 1px 0 #000 !important;
+}
+.top-list{
+    text-shadow: 0 1px #fff;
+    color: black;
+    background-color: #e2dfdf;
 }

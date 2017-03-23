@@ -5,10 +5,12 @@ $(function(){
                        var contenuto = $(".church");
                        contenuto.empty();
                        $.map(data,function(riga,indice){
-                          $(contenuto).append('<div class="ui-corner-all custom-corners"><div class="ui-bar ui-bar-a"><h3>'+ riga.nome +'</h3><a id="desc1" data-id='+ indice +' href="#map-desc" class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-carat-r arrow-list"></a></div>\
+                           var preferito = localStorage.getItem(indice);
+                           if(preferito == 1){var like = 'ui-alt-icon';}
+                          $(contenuto).append('<div class="ui-corner-all custom-corners"><div class="ui-bar ui-bar-a top-list"><h3>'+ riga.nome +'</h3><a href="#" id="like1" data-id='+ indice +' class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-heart ui-corner-all heart-list '+like+'"></a><a id="desc1" data-id='+ indice +' href="#map-desc" class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-carat-r ui-corner-all arrow-list"></a></div>\
                                               <div class="ui-body ui-body-a custom-body"><a data-id='+ indice +' id="desc2" href="#map-desc"><img class="image-list" src='+ riga.immagine +' alt=""></a><p class="font">'+ riga.descrizione +'</p></div></div>');
                        });
-                       /*$("#desc1,#desc2").click(function(){
+                       $("#desc1,#desc2").click(function(){
                            var contenuto2 = $(".map-content");
                             contenuto2.empty();
                           var id = $(this).attr('data-id');
@@ -20,7 +22,16 @@ $(function(){
                                          }
                                      });
                        });
-                   });*/
+                   });
+                        $("#like1").click(function(){
+                            if(localStorage.getItem($(this).attr('data-id')) != 1){
+                                $(this).addClass("ui-alt-icon");
+                                localStorage.setItem($(this).attr('data-id'),1);
+                            }else{
+                                $(this).removeClass("ui-alt-icon");
+                                localStorage.setItem($(this).attr('data-id'),0);
+                            }
+                        });
                   })
                   .fail(function(){
                       alert("Errore!");
@@ -32,7 +43,9 @@ $(function(){
                        var contenuto = $(".cult");
                        contenuto.empty();
                        $.map(data,function(riga,indice){
-                          $(contenuto).append('<div class="ui-corner-all custom-corners"><div class="ui-bar ui-bar-a"><h3>'+ riga.nome +'</h3><a id="desc3" data-id='+ indice +' href="#map-desc" class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-carat-r arrow-list"></a></div>\
+                           var preferito = localStorage.getItem(indice);
+                           if(preferito == 1){var like = 'ui-alt-icon';}
+                          $(contenuto).append('<div class="ui-corner-all custom-corners"><div class="ui-bar ui-bar-a top-list"><h3>'+ riga.nome +'</h3><a href="#" id="like2" data-id='+ indice +' class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-heart ui-corner-all heart-list '+like+'"></a><a id="desc3" data-id='+ indice +' href="#map-desc" class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-carat-r ui-corner-all arrow-list"></a></div>\
                                               <div class="ui-body ui-body-a custom-body"><a id="desc4" data-id='+ indice +' href="#map-desc"><img class="image-list" src='+ riga.immagine +' alt=""></a><p class="font">'+ riga.descrizione +'</p></div></div>');
                        });
                        $("#desc3,#desc4").click(function(){
@@ -48,7 +61,15 @@ $(function(){
                                      });
                        });
                    });
-                       
+                      $("#like2").click(function(){
+                            if(localStorage.getItem($(this).attr('data-id')) != 1){
+                                $(this).addClass("ui-alt-icon");
+                                localStorage.setItem($(this).attr('data-id'),1);
+                            }else{
+                                $(this).removeClass("ui-alt-icon");
+                                localStorage.setItem($(this).attr('data-id'),0);
+                            }
+                        }); 
                   })
                   .fail(function(){
                       alert("Errore!");
@@ -60,8 +81,12 @@ $(function(){
                        var contenuto = $(".mon");
                        contenuto.empty();
                        $.map(data,function(riga,indice){
-                          $(contenuto).append('<div class="ui-corner-all custom-corners"><div class="ui-bar ui-bar-a"><h3>'+ riga.nome +'</h3><a id="desc5" data-id='+ indice +' href="#map-desc" class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-carat-r arrow-list"></a></div>\
+                           var i = 3;
+                           var preferito = localStorage.getItem(indice);
+                           if(preferito == 1){var like = 'ui-alt-icon';}
+                          $(contenuto).append('<div class="ui-corner-all custom-corners"><div class="ui-bar ui-bar-a top-list"><h3>'+ riga.nome +'</h3><a href="#" id="like'+i+'" data-id='+ indice +' class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-heart ui-corner-all heart-list '+like+'"></a><a id="desc5" data-id='+ indice +' href="#map-desc" class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-carat-r ui-corner-all arrow-list"></a></div>\
                                               <div class="ui-body ui-body-a custom-body"><a data-id='+ indice +' id="desc6" href="#map-desc"><img class="image-list" src='+ riga.immagine +' alt=""></a><p class="font">'+ riga.descrizione +'</p></div></div>');
+                           i = i +1;
                        });
                        $("#desc5,#desc6").click(function(){
                            var contenuto2 = $(".map-content");
@@ -76,6 +101,15 @@ $(function(){
                                      });
                        });
                    });
+                        $("#like3,#like4").click(function(){
+                            if(localStorage.getItem($(this).attr('data-id')) != 1){
+                                $(this).addClass("ui-alt-icon");
+                                localStorage.setItem($(this).attr('data-id'),1);
+                            }else{
+                                $(this).removeClass("ui-alt-icon");
+                                localStorage.setItem($(this).attr('data-id'),0);
+                            }
+                        });
                   })
                   .fail(function(){
                       alert("Errore!");
@@ -87,8 +121,12 @@ $(function(){
                        var contenuto = $(".rist");
                        contenuto.empty();
                        $.map(data,function(riga,indice){
-                          $(contenuto).append('<div class="ui-corner-all custom-corners"><div class="ui-bar ui-bar-a"><h3>'+ riga.nome +'</h3><a id="desc7" data-id='+ indice +' href="#map-desc" class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-carat-r arrow-list"></a></div>\
+                           var i = 5;
+                            var preferito = localStorage.getItem(indice);
+                            if(preferito == 1){var like = 'ui-alt-icon';}
+                          $(contenuto).append('<div class="ui-corner-all custom-corners"><div class="ui-bar ui-bar-a top-list"><h3>'+ riga.nome +'</h3><a href="#" id="like'+i+'" data-id='+ indice +' class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-heart ui-corner-all heart-list '+like+'"></a><a id="desc7" data-id='+ indice +' href="#map-desc" class="ui-btn ui-btn-right ui-btn-icon-notext ui-icon-carat-r ui-corner-all arrow-list"></a></div>\
                                               <div class="ui-body ui-body-a custom-body"><a data-id='+ indice +' id="desc8" href="#map-desc"><img class="image-list" src='+ riga.immagine +' alt=""></a><p class="font">'+ riga.indirizzo +' - Tel '+ riga.telefono +'</p></div></div>');
+                           i = i +1;
                        });
                        $("#desc7,#desc8").click(function(){
                            var contenuto2 = $(".map-content");
@@ -103,6 +141,15 @@ $(function(){
                                      });
                        });
                    });
+                        $("#like5,#like6,#like7,#like8").click(function(){
+                            if(localStorage.getItem($(this).attr('data-id')) != 1){
+                                $(this).addClass("ui-alt-icon");
+                                localStorage.setItem($(this).attr('data-id'),1);
+                            }else{
+                                $(this).removeClass("ui-alt-icon");
+                                localStorage.setItem($(this).attr('data-id'),0);
+                            }
+                        });
                   })
                   .fail(function(){
                       alert("Errore!");
@@ -115,10 +162,9 @@ $(function(){
     $("div[data-role='page']").on("swipeleft", function(event) {
         $(this).find("div[data-role='panel']").panel("close");
     });
-    $("#scrolldown").click(function(e){
-        e.preventDefault();
-        $('div[data-role=page]').bind("pageshow", function() {
-            setTimeout(function(){$.mobile.silentScroll($("#register").offset().top);},200);
+    $(".scrolldown").click(function(e){
+        $("#contatti").on("pageshow", function() {
+            $.mobile.silentScroll($("#register").offset().top);
         });
         $.mobile.silentScroll($("#register").offset().top);
     });
@@ -145,4 +191,21 @@ $(function(){
       });
       $("#nome,#email,#obj,#messaggio").val('');
    });
+   $("#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8").click(function(){
+       var foto = $(this).attr('data-id');
+       $("#popup").removeClass("ui-hidden-accessible");
+       $("#expand").attr('src', foto);
+    });
+    
+    $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 5000
+    });
+    
+    
 });
