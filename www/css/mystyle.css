@@ -67,8 +67,12 @@ h3{
 .cult{}
 .mon{}
 .rist{}
-.map-content{}
+.map-content{
+    padding: 0;
+}
 .scrolldown{}
+.prefer{}
+.parent-container{}
 .icon-contatti{
     width: 18px;
     height: 18px;
@@ -81,17 +85,14 @@ h3{
 .form-size{
     height: 30px !important;
 }
-.pop{
-    width: 100vw;
-    height: 80vh;
-}
-.fade{
+.made{
     width: 90%;
     height: 100%;
     margin-left: 15px;
 }
 .font-list{
     font-size: 75%;
+    padding-left: 15px;
 }
 .heart-list{
     margin:0; 
@@ -106,10 +107,18 @@ h3{
 }
 .lista{
     color: #fff !important;
-    text-shadow:0 1px 0 #000 !important;
+    text-shadow:0 1px 1px #000 !important;
 }
 .top-list{
     text-shadow: 0 1px #fff;
     color: black;
     background-color: #e2dfdf;
+}
+.mezzi{
+    margin-top: 0;
+}
+.dett{
+    margin-top: 10px;
+    margin-left: 13px;
+    margin-bottom: 15px;
 }
