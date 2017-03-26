@@ -19,7 +19,7 @@ $(function(){
                                       $.map(data,function(riga,indice){
                                           if(riga.telefono == null){var notel = 'ui-state-disabled';}
                                           if(indice===id){
-                                            $(contenuto2).append('<iframe src="https://www.google.com/maps/embed?pb='+riga.coordinate+'" width="1000" height="450" frameborder="0" style="border:0; max-width: 100vw; max-height: 50vh;" allowfullscreen></iframe><h4 class="dett">'+riga.nome+'</h4><p class="font" style="margin-left:4px;"><b>Indirizzo</b></p><p class="font-list">'+riga.indirizzo+'</p><div style="margin-left:40px;"><a href="tel:'+riga.telefono+'" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-icon-left ui-icon-phone '+notel+'" style="background-color:#e2dfdf !important;">Chiama</a></div>');
+                                            $(contenuto2).append('<iframe src="https://www.google.com/maps/embed?pb='+riga.coordinate+'" width="1000" height="450" frameborder="0" style="border:0; max-width: 100vw; max-height: 50vh;" allowfullscreen></iframe><h4 class="dett">'+riga.nome+'</h4><p class="font" style="margin-left:4px;"><b>Indirizzo</b></p><p class="font-list">'+riga.indirizzo+'</p><div style="margin-left:15px;"><a href="tel:'+riga.telefono+'" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-icon-left ui-icon-phone '+notel+'" style="background-color:#e2dfdf !important;">Chiama</a></div>');
                                          }
                                      });
                        });
@@ -58,7 +58,7 @@ $(function(){
                                       $.map(data,function(riga,indice){
                                           if(riga.telefono == null){var notel = 'ui-state-disabled';}
                                           if(indice===id){
-                                            $(contenuto2).append('<iframe src="https://www.google.com/maps/embed?pb='+riga.coordinate+'" width="1000" height="450" frameborder="0" style="border:0; max-width: 100vw; max-height: 50vh;" allowfullscreen></iframe><h4 class="dett">'+riga.nome+'</h4><p class="font" style="margin-left:4px;"><b>Indirizzo</b></p><p class="font-list">'+riga.indirizzo+'</p><div style="margin-left:40px;"><a href="tel:'+riga.telefono+'" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-icon-left ui-icon-phone '+notel+'" style="background-color:#e2dfdf !important;">Chiama</a></div>');
+                                            $(contenuto2).append('<iframe src="https://www.google.com/maps/embed?pb='+riga.coordinate+'" width="1000" height="450" frameborder="0" style="border:0; max-width: 100vw; max-height: 50vh;" allowfullscreen></iframe><h4 class="dett">'+riga.nome+'</h4><p class="font" style="margin-left:4px;"><b>Indirizzo</b></p><p class="font-list">'+riga.indirizzo+'</p><div style="margin-left:15px;"><a href="tel:'+riga.telefono+'" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-icon-left ui-icon-phone '+notel+'" style="background-color:#e2dfdf !important;">Chiama</a></div>');
                                          }
                                      });
                        });
@@ -97,7 +97,7 @@ $(function(){
                                       $.map(data,function(riga,indice){
                                           if(riga.telefono == null){var notel = 'ui-state-disabled';}
                                           if(indice===id){
-                                            $(contenuto2).append('<iframe src="https://www.google.com/maps/embed?pb='+riga.coordinate+'" width="1000" height="450" frameborder="0" style="border:0; max-width: 100vw; max-height: 50vh;" allowfullscreen></iframe><h4 class="dett">'+riga.nome+'</h4><p class="font" style="margin-left:4px;"><b>Indirizzo</b></p><p class="font-list">'+riga.indirizzo+'</p><div style="margin-left:40px;"><a href="tel:'+riga.telefono+'" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-icon-left ui-icon-phone '+notel+'" style="background-color:#e2dfdf !important;">Chiama</a></div>');
+                                            $(contenuto2).append('<iframe src="https://www.google.com/maps/embed?pb='+riga.coordinate+'" width="1000" height="450" frameborder="0" style="border:0; max-width: 100vw; max-height: 50vh;" allowfullscreen></iframe><h4 class="dett">'+riga.nome+'</h4><p class="font" style="margin-left:4px;"><b>Indirizzo</b></p><p class="font-list">'+riga.indirizzo+'</p><div style="margin-left:15px;"><a href="tel:'+riga.telefono+'" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-icon-left ui-icon-phone '+notel+'" style="background-color:#e2dfdf !important;">Chiama</a></div>');
                                          }
                                      });
                        });
@@ -136,7 +136,7 @@ $(function(){
                                       $.map(data,function(riga,indice){
                                           if(riga.telefono == null){var notel = 'ui-state-disabled';}
                                           if(indice===id){
-                                            $(contenuto2).append('<iframe src="https://www.google.com/maps/embed?pb='+riga.coordinate+'" width="1000" height="450" frameborder="0" style="border:0; max-width: 100vw; max-height: 50vh;" allowfullscreen></iframe><h4 class="dett">'+riga.nome+'</h4><p class="font" style="margin-left:4px;"><b>Indirizzo</b></p><p class="font-list">'+riga.indirizzo+'</p><div style="margin-left:40px;"><a href="tel:'+riga.telefono+'" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-icon-left ui-icon-phone '+notel+'" style="background-color:#e2dfdf !important;">Chiama</a></div>');
+                                            $(contenuto2).append('<iframe src="https://www.google.com/maps/embed?pb='+riga.coordinate+'" width="1000" height="450" frameborder="0" style="border:0; max-width: 100vw; max-height: 50vh;" allowfullscreen></iframe><h4 class="dett">'+riga.nome+'</h4><p class="font" style="margin-left:4px;"><b>Indirizzo</b></p><p class="font-list">'+riga.indirizzo+'</p><div style="margin-left:15px;"><a href="tel:'+riga.telefono+'" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-icon-left ui-icon-phone '+notel+'" style="background-color:#e2dfdf !important;">Chiama</a></div>');
                                          }
                                      });
                        });
@@ -192,7 +192,7 @@ $(function(){
       $("#nome,#email,#obj,#messaggio").val('');
    });
     
-    $('.fade').slick({
+    $('.made').slick({
         dots: true,
         infinite: true,
         speed: 500,
@@ -234,7 +234,7 @@ $(function(){
                                           $.map(riga,function(value,index){
                                               if(value.telefono == null){var notel = 'ui-state-disabled';}
                                           if(index===id){
-                                            $(content2).append('<iframe src="https://www.google.com/maps/embed?pb='+value.coordinate+'" width="1000" height="450" frameborder="0" style="border:0; max-width: 100vw; max-height: 50vh;" allowfullscreen></iframe><h4 class="dett">'+value.nome+'</h4><p class="font" style="margin-left:4px;"><b>Indirizzo</b></p><p class="font-list">'+value.indirizzo+'</p><div style="margin-left:40px;"><a href="tel:'+value.telefono+'" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-icon-left ui-icon-phone '+notel+'" style="background-color:#e2dfdf !important;">Chiama</a></div>');
+                                            $(content2).append('<iframe src="https://www.google.com/maps/embed?pb='+value.coordinate+'" width="1000" height="450" frameborder="0" style="border:0; max-width: 100vw; max-height: 50vh;" allowfullscreen></iframe><h4 class="dett">'+value.nome+'</h4><p class="font" style="margin-left:4px;"><b>Indirizzo</b></p><p class="font-list">'+value.indirizzo+'</p><div style="margin-left:15px;"><a href="tel:'+value.telefono+'" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-icon-left ui-icon-phone '+notel+'" style="background-color:#e2dfdf !important;">Chiama</a></div>');
                                          }
                                         });
                                      });
